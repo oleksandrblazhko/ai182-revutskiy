@@ -1,4 +1,4 @@
-|Id |Possible Mitigation(s)                                                                              
+|Id |Possible Mitigation(s) |                                                                             
 |---|--------------------------------------------------------------------------------------------------|
 
 |23 |Implement proper authorization mechanism in ASP.NET Web API. Refer: <a href="https://aka.ms/tmtauthz#authz-aspnet">https://aka.ms/tmtauthz#authz-aspnet</a>|
