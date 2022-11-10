@@ -1,0 +1,50 @@
+@startuml
+
+title Components Diagram
+
+node "Client device" {
+ [Web Browser]
+}
+
+node "Presentation layer" {
+ [React]
+}
+
+node "Server" {
+  [Express]
+}
+
+node "Database" {
+  [MongoDB]
+}
+
+node "Payment service" {
+  [Fondy]
+}
+
+node "Google authorization" {
+  [Google OAuth]
+}
+
+[Web Browser] --> [React]: request
+
+[React] --> [Web Browser]: response
+
+[React] --> [Express]: request
+
+[Express] --> [React]: response
+
+[Express] --> [Fondy]: request
+
+[Fondy] --> [Express]: response
+
+[Express] --> [MongoDB]: request
+
+[MongoDB] --> [Express]: response
+
+[Express] --> [Google OAuth]: request
+
+[Google OAuth] --> [Express]: response
+
+
+@enduml
