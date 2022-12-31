@@ -1,4 +1,4 @@
-CREATE FUNCTION get_data(p_username VARCHAR, p_token VARCHAR, human_name VARCHAR)
+CREATE OR REPLACE FUNCTION get_data(p_username VARCHAR, p_token VARCHAR, human_name VARCHAR)
 RETURNS TABLE (p_id INTEGER, name VARCHAR, bd DATE) AS $$
 DECLARE
 	str VARCHAR;
